@@ -1,0 +1,15 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+/* :root -> 获取根元素html */
+:root {
+  /* --变量名 */
+  --color-text: #666;
+  --color-high-text: rgb(78, 140, 238);
+  /* tintColor：整体的背景颜色，就是我们涂上去一个颜色；之后在设置导航的时候会用到的背景颜色 */
+  --color-tint: rgb(78, 140, 248);
+  --color-background: #ffffff;
+  --font-size: 16px;
+  --line-height: 1.5;
+}
