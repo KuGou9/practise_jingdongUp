@@ -1,4 +1,5 @@
 <template>
+<!-- 顶部的标题显示当前是 我的 页面 -->
   <nav-bar class="nav-bar">
     <div slot="navbar-center">我的</div>
   </nav-bar>

@@ -1,7 +1,9 @@
 <template>
+<!-- 根据父元素传过来的option进行展示 -->
   <div>
     <div class="me-item" v-for="(value,index) in optionsArr" :key="index">
       <span class="item-text">{{value}}</span>
+      <!-- 右箭头表示前进 -->
       <img src="@/assets/img/go.svg" alt />
     </div>
   </div>

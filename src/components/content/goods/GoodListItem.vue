@@ -62,8 +62,6 @@ a {
 /* 让文字有地方可以显示 */
 .good-list-item {
   width: 48%;
-  height: 320px;
-  position: relative;
   padding-top: 3px;
 }
 .good-list-item img {
@@ -72,7 +70,6 @@ a {
 }
 .good-item-info {
   font-size: 16px;
-  position: absolute;
   left: 0;
   right: 0;
 }

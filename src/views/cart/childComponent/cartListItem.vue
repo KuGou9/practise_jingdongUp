@@ -31,14 +31,6 @@ export default {
   data() {
     return {
       isChoose: false,
-      //   item: {
-      //     image:
-      //       "https://s5.mogucdn.com/mlcdn/c45406/200627_1l6l0cjck9b7kj5gah9d2c5c2e2ak_3993x5999.jpg_400x534.v1cAC.40.webp",
-      //     decr: "小个子七分裤休闲运动套装女夏季新款韩版大码时髦洋气三件套",
-      //     price: "¥79",
-      //     count: 1,
-      //     shop: "随便一个店铺",
-      //   },
     };
   },
 
@@ -49,12 +41,6 @@ export default {
         return {};
       },
     },
-    //     item: {
-    //       type: Object,
-    //       default() {
-    //         return {};
-    //       },
-    //     },
   },
   methods: {
     increment() {
@@ -64,6 +50,7 @@ export default {
       this.$store.commit(DECREMENT);
     },
     choose(btnChoose) {
+      // 一个商品被选中之后更新选中状态以及重新计算金额
       this.$store.commit("isChoose");
       this.$store.commit(CAL_CART_MONEY);
     },

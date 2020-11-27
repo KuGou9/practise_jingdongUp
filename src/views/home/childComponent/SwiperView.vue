@@ -38,7 +38,7 @@ export default {
 
 <style scoped>
 .swiper {
-  height: 70px;
+  position: relative;
 }
 
 .swiper img {

@@ -3,6 +3,7 @@
     <nav-bar class="navbar">
       <div slot="navbar-center">购物街</div>
     </nav-bar>
+    <!-- tab-controll这个是为了呈现吸顶效果 -->
     <tab-controll
       :title="title"
       @tabClick="tabClick"
@@ -26,7 +27,7 @@
       <good-list :goods="showImage" class="good-list"></good-list>
     </better-scroll>
     <!-- 组件的话是不能直接监听到click时间的，所以要加native -->
-    <back-up @click.native="backClick" v-show="isShowBackUp" />
+    <back-up @click.native="backTop" v-show="isShowBackUp" />
   </div>
 </template>
 
@@ -313,12 +314,12 @@ export default {
      * 关于条件滚动的事件
      */
     // 1. 点击回到顶部
-    backClick() {
-      // 通过this.$refs.scroll获取到组件，然后访问组件里面的data里面的scroll对象再调用scrollTO方法。500毫秒代表在这个时间段内返回，这样就有一个返回的效果
+    backTop() {
+      // 通过this.$refs.scroll获取到组件，然后访问组件里面的data里面的scroll对象再调用scrollTo方法。500毫秒代表在这个时间段内返回，这样就有一个返回的效果
       // this.$refs.scroll.scroll.scrollTo(0,0,500);
       // 上面的方法可以实现，但是代码难以理解，所以在better-scroll里面再封装一次
-      // this.$refs.scroll.scrollTo(0, 0, 500);
-      this.backUp.backClick();
+      this.$refs.scroll.scrollTo(0, 0, 500);
+      // this.backUp.backClick();
     },
 
     // 2. 监听滚动的位置

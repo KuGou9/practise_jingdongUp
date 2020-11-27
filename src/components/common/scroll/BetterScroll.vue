@@ -8,7 +8,6 @@
 
 <script>
 import BScroll from "better-scroll";
-import Vue from "vue";
 export default {
   name: "better-scroll",
   data() {
@@ -84,7 +83,7 @@ export default {
             // }, 1500);
           });
         }
-      }, 500);
+      }, 1000);
     });
   },
 };

@@ -30,7 +30,9 @@ export default {
   flex-wrap: wrap;
   font-size: 16px;
   text-align: center;
-  margin-top: 74px;
+  background-color: white;
+  border-bottom: 1px solid #d6d5d5;
+  padding-bottom: 5px;
 }
 .recommend img {
   width: 50px;

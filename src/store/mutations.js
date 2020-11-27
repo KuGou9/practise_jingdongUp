@@ -16,8 +16,10 @@ export default {
     if (state.cartList[0].count > 1) {
       state.cartList[0].count--;
     } else {
-      alert('确定要删除商品吗？');
-      state.cartList.pop();
+      let r = confirm('确定要删除商品吗？');
+      if (r) {
+        state.cartList.pop();
+      }
     }
   },
   // 3.添加商品到购物车

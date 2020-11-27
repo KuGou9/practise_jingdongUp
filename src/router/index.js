@@ -41,7 +41,8 @@ const routes = [
 ];
 
 const router = new VueRouter({
-  mode: 'history',
+  // 打包的时候需要注释掉
+  // mode: 'history',
   base: process.env.BASE_URL,
   routes,
 });

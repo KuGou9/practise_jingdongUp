@@ -1,12 +1,22 @@
 <template>
-  <div class="me-card">
+<!-- 登录选项 -->
+  <div class="me-card" @click="login">
     <img src="@/assets/img/me_active.svg" alt="用户图片" />
     <div>点击登录</div>
   </div>
 </template>
 
 <script>
-export default {};
+export default {
+  methods:{
+    login(){
+     let r= confirm('进入到登陆界面？')
+     if(r){
+      this.$router.push({path:'/login'});
+     }
+    }
+  }
+};
 </script>
 
 <style scoped>
